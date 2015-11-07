@@ -191,7 +191,7 @@ if($next_tab > 0){
     $state = $response['state'];
     $country = $response['country'];
     $zip_code = $response['zip_code'];
-    $state_of_origin = $response['state'];
+    $state_of_origin = $response['state_of_origin'];
     $local_govt = $response['lga_origin'];
     $hometown = $response['hometown'];
     $hometown_address = $response['home_town_address'];
@@ -518,7 +518,7 @@ if(isset($_REQUEST['submit_student_affairs_form'])){
                 $scanned_degree_image_type = $im_tp[1]; //image type
          }
         else{
-            $scanned_degree_valid = false;
+            $scanned_degree_valid = true;
         }
         if($_FILES["criminal_offence_file"]["size"] < 250000 && ($_FILES["criminal_offence_file"]["type"] == "image/jpeg" || 
             $_FILES["criminal_offence_file"]["type"] == "image/gif" || $_FILES["criminal_offence_file"]["type"] == "image/png")){
@@ -537,7 +537,7 @@ if(isset($_REQUEST['submit_student_affairs_form'])){
         $em_post = array("surname"=>$surname, "first_name"=>$first_name, "middle_name"=>$middle_name, "email"=>$_SESSION['user'],
         "gender"=>$gender, "religion"=>$religion, "university"=>$university, "dob"=>$dob, "pob"=>$pob,
         "telephone"=>$telephone, "address1"=>$address1, "address2"=>$address2, "city"=>$city, "state"=>$state,
-        "country"=>$country, "zip_code"=>$zip_code, "state_of_origin"=>$state_of_origin,
+        "country"=>$country, "zip_code"=>$zip_code, "state_of__origin"=>$state_of_origin,
         "local_govt"=>$local_govt, "hometown"=>$hometown, "hometown_address"=>$hometown_address);
         
         $em_post['scanned_degree_image'] = $scanned_degree_image;
@@ -676,7 +676,7 @@ if(isset($_REQUEST['submit_student_affairs_form'])){
     //$state = $response['state'];
     $country = $response['country'];
     $zip_code = $response['zip_code'];
-    $state_of_origin = $response['state'];
+    $state_of_origin = $response['state_of_origin'];//$response['state'];
     $local_govt = $response['lga_origin'];
     $hometown = $response['hometown'];
     $hometown_address = $response['home_town_address'];

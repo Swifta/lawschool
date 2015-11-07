@@ -116,7 +116,7 @@
                    name="city" value="<?php echo $city; ?>" required="required">
             </div>
             <div class="form-group col-sm-12">
-                <label for="region">State / Province / Region</label>
+                <label for="state">State / Province / Region</label>
                 <select class="form-control" id ="state" name="state" required="required">
                     <option></option>
                     <?php
@@ -139,7 +139,7 @@
                        name="zip_code" value="<?php echo $zip_code; ?>" required="required">
              </div>
             <div class="form-group col-sm-12">
-              <label for="state">State of Origin*</label>
+              <label for="state_of_origin">State of Origin*</label>
                   <select class="form-control" id="state_of_origin" name="state_of_origin" required>
                         <option value=""></option>
                         <?php
@@ -148,7 +148,7 @@
                   </select>
               </div>
             <div class="form-group col-md-12">
-              <label for="state">Local goverment*</label>
+              <label for="local_govt">Local goverment*</label>
                   <select class="form-control" id ="local_govt" name="local_govt" required="required">
                     <option value=""></option>
                     
