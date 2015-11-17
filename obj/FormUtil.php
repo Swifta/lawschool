@@ -121,7 +121,8 @@ class FormUtil{
        $university['Redeemer University'] = "Redeemers University";
        $university['Renaissance University'] = "Renaissance University";
        $university['Rhema University'] = "Rhema University";
-       $university['Ritman University'] = "Ritman University";  
+       $university['Ritman University'] = "Ritman University";
+       $university['Rivers State University of Science & Technology'] = "Rivers State University of Science & Technology"; 
        $university['Salem University'] = "Salem University";
        $university['Salem University'] = "Salem University";
        $university['Samuel Adegboyega University'] = "Samuel Adegboyega University";
